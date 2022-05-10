@@ -26,8 +26,13 @@
 - 其他类型视频粘贴网址，附带网络协议
 
 ## 插件截图
+### 设置界面
 ![设置界面](https://github.com/isSuperman/VideoIframe_for_typecho/raw/main/assets/iframesetting.png)
+
+### 插入按钮
 ![插入按钮](https://github.com/isSuperman/VideoIframe_for_typecho/raw/main/assets/iframebtn.png)
+
+### 使用界面
 ![使用界面](https://github.com/isSuperman/VideoIframe_for_typecho/raw/main/assets/iframepanel.png)
 
 ## 更新计划
