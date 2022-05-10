@@ -21,7 +21,8 @@
 - [ ] 其他
 
 ## 感谢
-1. 编辑器扩展采用cmsblog博主的代码
+1. 编辑器扩展采用cmsblog.cn博主的代码
+2. 短代码采用[小さな手は](https://www.littlehands.site/)的ShortCode
 
 ## 参与贡献
 
