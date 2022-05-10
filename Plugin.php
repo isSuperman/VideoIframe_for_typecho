@@ -103,7 +103,6 @@ class VideoIframe_Plugin implements PluginInterface
     **/
     public static function parseShortCode(){
 		require_once 'ShortCode.php';
-
 		ShortCode::set('videoiframe',function($name,$attr,$text,$code){
 			// name 短代码名称
             // attr 短代码属性
