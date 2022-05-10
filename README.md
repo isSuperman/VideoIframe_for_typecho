@@ -1,19 +1,34 @@
 # VideoIframe_for_typecho
 
-![](https://github.com/isSuperman/VideoIframe_for_typecho/raw/main/logo.jpg)
+![](https://github.com/isSuperman/VideoIframe_for_typecho/raw/main/assets/logo.jpg)
 
 ## 介绍
 一款加强typecho挂在视频插件，理论上适应全部主题
 
+## 插件优势
+
+ 1. 抖音直接粘贴复制的所有文本即可，自动解析网址
+ 2. 哔哩哔哩直接粘贴复制的iframe代码，自动替换为720p高清
+ 3. 其他视频自动解析，复制视频地址
+ 4. 加入了自动检测更新功能，以便及时体验最新功能
+
 
 ## 安装教程
-下载安装包，上传到`usr/plugins/`，解压后将文件夹改名为VideoIframe
+ 1. 下载插件后，上传到`usr/plugins/`，解压后将文件夹改名为VideoIframe
+ 2. 启用插件
+ 3. 填写对应的云视频解析api
+ 4. 撰写文章时，点击插入iframe视频按钮，填写对应的视频网址即可
 
 ## 使用说明
 - 启用插件后，填写相应的云视频解析api
 - 在撰写文章的编辑器中，找到对应图标，点击弹出对话框
 - 目前针对抖音和哔哩哔哩做了优化，抖音在app中复制链接，哔哩哔哩复制iframe代码，均无需删除文本，直接粘贴即可
 - 其他类型视频粘贴网址，附带网络协议
+
+## 插件截图
+![设置界面](https://github.com/isSuperman/VideoIframe_for_typecho/raw/main/assets/iframesetting.png)
+![插入按钮](https://github.com/isSuperman/VideoIframe_for_typecho/raw/main/assets/iframebtn.png)
+![使用界面](https://github.com/isSuperman/VideoIframe_for_typecho/raw/main/assets/iframepanel.png)
 
 ## 更新计划
 - [x] 插件化
