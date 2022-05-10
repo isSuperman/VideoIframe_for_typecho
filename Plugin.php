@@ -78,10 +78,7 @@ class VideoIframe_Plugin implements PluginInterface
      */
     public static function header() {
         $cssUrl = Helper::options() -> rootUrl . '/usr/plugins/VideoIframe/static/css/style.css';
-        $dyapi = Helper::options()->plugin('VideoIframe')->dyapi;
-        $videoapi = Helper::options()->plugin('VideoIframe')->videoapi;
         echo '<link rel="stylesheet" type="text/css" href="' . $cssUrl . '" />';
-        echo '<script>window["parse_douyin_api"]="' . $dyapi . '";window["parse_other_video_api"]="' . $videoapi . '"</script>';
     }
 
     /**
