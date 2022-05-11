@@ -8,11 +8,12 @@ const items = [
 ];
 
 items.forEach(_ => {
-  setTimeout(() => {
-    let item = $(`<li class="wmd-button" id="${_.id}" title="${_.title}" style="left: 350px;">${_.svg}</li>`);
-    $('#wmd-button-row').append(item);
-    item.on('click', function () {
-      $('body').append(
+    let btn = $(`<p><input value="${_.title}" type="button" id="${_.id}" onclick="insertIframeVideo()" /></p>`)
+    $('.mono.url-slug').append(btn);
+});
+
+function insertIframeVideo(){
+    $('body').append(
         '<div id="iframePanel">' +
         '<div class="wmd-prompt-background" style="position: fixed; top: 0px; z-index: 1000; opacity: 0.5; height: 100%; left: 0px; width: 100%;"></div>' +
         '<div class="wmd-prompt-dialog">' +
@@ -30,10 +31,11 @@ items.forEach(_ => {
         '</div>' +
         '</div>');
       $('.wmd-prompt-dialog input').val("http://").select();
-    });
-  }, 560)
+}
+$(document).on('click', '#awmd-iframe-button', function(){
+    alert('11')
+})
 
-});
 $(document).on('click', '#iframe_ok', function () {
   var iframe_url_str = $('.wmd-prompt-dialog input[name="iframe_url"]').val()
   var host_pattern = /([0-9a-z.]+)\//
@@ -45,6 +47,7 @@ $(document).on('click', '#iframe_ok', function () {
       var dy_pattern = /https:\/\/(.*)\//
       var dy_iframe_url = dy_pattern.exec(iframe_url_str)[0]
       $('#text').insertContent('[VideoIframe]'+dy_iframe_url+'[/VideoIframe]');
+      $(".vditor-reset").append(`<p data-block="0">[VideoIframe]${dy_iframe_url}[/VideoIframe]</p>`)
       $('#iframePanel').remove();
       $('textarea').focus();
       break;
@@ -52,6 +55,7 @@ $(document).on('click', '#iframe_ok', function () {
       var b_pattern = /\/\/(.*)&page=1/
       var b_iframe_url = b_pattern.exec(iframe_url_str)[0]
       $('#text').insertContent('[VideoIframe]'+b_iframe_url+'[/VideoIframe]');
+      $(".vditor-reset").append(`<p data-block="0">[VideoIframe]${b_iframe_url}[/VideoIframe]</p>`)
       $('#iframePanel').remove();
       $('textarea').focus();
       break;
@@ -59,6 +63,7 @@ $(document).on('click', '#iframe_ok', function () {
       var o_pattern = /(https?:\/\/)([0-9a-z.]+)(:[0-9]+)?([/0-9a-z.]+)?(\?[0-9a-z&=]+)?(#[0-9-a-z]+)?/
       var iframe_url = o_pattern.exec(iframe_url_str)[0]
       $('#text').insertContent('[VideoIframe]'+iframe_url+'[/VideoIframe]');
+      $(".vditor-reset").append(`<p data-block="0">[VideoIframe]${iframe_url}[/VideoIframe]</p>`)
       $('#iframePanel').remove();
       $('textarea').focus();
   }
