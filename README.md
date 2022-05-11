@@ -30,6 +30,10 @@
 ![设置界面](https://github.com/isSuperman/VideoIframe_for_typecho/raw/main/assets/iframesetting.png)
 
 ### 插入按钮
+> 1.0.3 样式
+![插入按钮](https://github.com/isSuperman/VideoIframe_for_typecho/raw/main/assets/iframebtn2.png)
+
+> 1.0.1-1.0.2 样式
 ![插入按钮](https://github.com/isSuperman/VideoIframe_for_typecho/raw/main/assets/iframebtn.png)
 
 ### 使用界面
@@ -38,6 +42,7 @@
 ## 更新计划
 - [x] 插件化
 - [x] 进一步优化代码，使用短代码代替
+- [x] 适配Vditor 
 - [ ] 其他
 
 ## 感谢
