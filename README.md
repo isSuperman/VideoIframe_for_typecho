@@ -45,6 +45,9 @@
 - [x] 适配Vditor 
 - [ ] 其他
 
+## 目前存在的问题
+Vditor编辑器已适配，前台解析尚未适配
+
 ## 感谢
 1. 编辑器扩展采用cmsblog.cn博主的代码
 2. 短代码采用[小さな手は](https://www.littlehands.site/)的ShortCode
